@@ -207,8 +207,9 @@ const Homepage = () => {
 
         <Text
           textAlign={{ base: "left", md: "center" }}
-          fontSize={{ base: "18px", md: "20px" }}
+          fontSize={{ base: "19px", md: "20px" }}
           fontWeight="bold"
+          color="#0050ff"
           mt="8"
         >
           The easy way to get more bookings
@@ -228,6 +229,7 @@ const Homepage = () => {
               everything through our easy-to-use dashboard.
             </Text>
           </Box>
+
           <Box>
             <Text fontWeight="bold">Reach millions with Tripadvisor</Text>
             <Text mt="2" color="grey" fontSize="15px">
@@ -236,6 +238,7 @@ const Homepage = () => {
               places to stay around the world. Why not add yours?
             </Text>
           </Box>
+
           <Box>
             <Text fontWeight="bold">List your home</Text>
             <Text mt="2" color="grey" fontSize="15px">
@@ -244,6 +247,7 @@ const Homepage = () => {
               bookings in minutes. Give it a try.
             </Text>
           </Box>
+          
           <Box>
             <Text fontWeight="bold">Secure and simple</Text>
             <Text mt="2" color="grey" fontSize="15px">
