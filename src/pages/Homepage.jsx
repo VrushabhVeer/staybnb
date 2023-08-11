@@ -206,7 +206,7 @@ const Homepage = () => {
         </Box>
 
         <Text
-          textAlign="center"
+          textAlign={{ base: "left", md: "center" }}
           fontSize={{ base: "18px", md: "20px" }}
           fontWeight="bold"
           mt="8"
@@ -217,7 +217,7 @@ const Homepage = () => {
         <SimpleGrid
           columns={[1, 1, 2, 4]}
           spacing="40px"
-          mt="8"
+          mt="5"
           textAlign="left"
         >
           <Box>
