@@ -13,7 +13,7 @@ const Footer = () => {
           spacing={{ base: "30px", md: "50px" }}
         >
           <Stack align={"flex-start"}>
-            <Text fontWeight="bold" fontSize={{ base: "15px", md: "16px" }}>
+            <Text fontWeight="600" fontSize={{ base: "15px", md: "16px" }}>
               Product
             </Text>
             <Text fontSize={{ base: "14px", md: "15px" }}>Overview</Text>
@@ -24,7 +24,7 @@ const Footer = () => {
           </Stack>
 
           <Stack align={"flex-start"}>
-            <Text fontWeight="bold" fontSize={{ base: "15px", md: "16px" }}>
+            <Text fontWeight="600" fontSize={{ base: "15px", md: "16px" }}>
               Company
             </Text>
             <Text fontSize={{ base: "14px", md: "15px" }}>About</Text>
@@ -35,7 +35,7 @@ const Footer = () => {
           </Stack>
 
           <Stack align={"flex-start"}>
-            <Text fontWeight="bold" fontSize={{ base: "15px", md: "16px" }}>
+            <Text fontWeight="600" fontSize={{ base: "15px", md: "16px" }}>
               Support
             </Text>
             <Text fontSize={{ base: "14px", md: "15px" }}>Help Center</Text>
@@ -48,7 +48,7 @@ const Footer = () => {
           </Stack>
 
           <Stack align={"flex-start"}>
-            <Text fontWeight="bold" fontSize={{ base: "15px", md: "16px" }}>
+            <Text fontWeight="600" fontSize={{ base: "15px", md: "16px" }}>
               Follow Us
             </Text>
             <Flex gap="3" mt="3" fontSize={{base:"15", md:"17"}}>
@@ -73,7 +73,7 @@ const Footer = () => {
         <Text fontSize="14px">© 2023 </Text>
         <Flex alignItems="center">
           <Image w="4" src={logo} alt="logo" />
-          <Text fontSize="14px" fontWeight="bold" fontFamily="Bricolage Grotesque">
+          <Text fontSize="14px" fontWeight="600">
             staybnb,
           </Text>
         </Flex>

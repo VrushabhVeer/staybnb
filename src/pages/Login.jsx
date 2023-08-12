@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <Box w={{ base: "90%", md: "35%" }} m="auto" mt={{ base: "10", md: "20" }}>
       <Box textAlign="center">
-        <Text fontSize={{ base: "26px", md: "36px" }} fontWeight="bold">
+        <Text fontSize={{ base: "26px", md: "36px" }} fontWeight="700">
           Welcome Back
         </Text>
         <Text>Login to your planr account.</Text>

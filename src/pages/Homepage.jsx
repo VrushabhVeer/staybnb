@@ -52,7 +52,7 @@ const Homepage = () => {
               fontWeight="normal"
               fontSize="16px"
               mt="8"
-              px="10"
+              px="8"
               size="lg"
             >
               Discover stays
@@ -97,7 +97,7 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="bold" fontSize="17px" mt="3">
+            <Text fontWeight="600" fontSize="17px" mt="3">
               Peace of mind
             </Text>
             <Text color="gray" fontSize="15px">
@@ -114,7 +114,7 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="bold" fontSize="17px" mt="3">
+            <Text fontWeight="600" fontSize="17px" mt="3">
               All the privacy of home
             </Text>
             <Text color="gray" fontSize="15px">
@@ -131,7 +131,7 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="bold" fontSize="17px" mt="3">
+            <Text fontWeight="600" fontSize="17px" mt="3">
               More for less
             </Text>
             <Text color="gray" fontSize="15px">
@@ -148,7 +148,7 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="bold" fontSize="17px" mt="3">
+            <Text fontWeight="600" fontSize="17px" mt="3">
               A place for everyone
             </Text>
             <Text color="gray" fontSize="15px">
@@ -200,6 +200,7 @@ const Homepage = () => {
             fontSize="16px"
             mt="5"
             size="lg"
+            px="8"
           >
             List property
           </Button>
@@ -208,7 +209,7 @@ const Homepage = () => {
         <Text
           textAlign={{ base: "left", md: "center" }}
           fontSize={{ base: "19px", md: "20px" }}
-          fontWeight="bold"
+          fontWeight="700"
           color="#0050ff"
           mt="8"
         >
@@ -222,7 +223,7 @@ const Homepage = () => {
           textAlign="left"
         >
           <Box>
-            <Text fontWeight="bold">Cost-effective advertising</Text>
+            <Text fontWeight="600">Cost-effective advertising</Text>
             <Text mt="2" color="grey" fontSize="15px">
               With a free listing, you can advertise your rental with no upfront
               costs. Pay just 3% (excl. VAT) on confirmed bookings and manage
@@ -231,7 +232,7 @@ const Homepage = () => {
           </Box>
 
           <Box>
-            <Text fontWeight="bold">Reach millions with Tripadvisor</Text>
+            <Text fontWeight="600">Reach millions with Tripadvisor</Text>
             <Text mt="2" color="grey" fontSize="15px">
               Exposure to Tripadvisor’s global traveller audience comes free
               with your listing. Millions of people are searching for unique
@@ -240,16 +241,16 @@ const Homepage = () => {
           </Box>
 
           <Box>
-            <Text fontWeight="bold">List your home</Text>
+            <Text fontWeight="600">List your home</Text>
             <Text mt="2" color="grey" fontSize="15px">
               Have a holiday rental, spare room or want to let out your own home
               while you’re away? Your ad can be online and ready to receive
               bookings in minutes. Give it a try.
             </Text>
           </Box>
-          
+
           <Box>
-            <Text fontWeight="bold">Secure and simple</Text>
+            <Text fontWeight="600">Secure and simple</Text>
             <Text mt="2" color="grey" fontSize="15px">
               A Holiday Lettings listing gives you a secure and easy way to take
               bookings and payments online. Plus, it’s simple to create and

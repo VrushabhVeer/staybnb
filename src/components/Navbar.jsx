@@ -36,13 +36,14 @@ export default function Navbar() {
           />
           <Link to="/">
             <Flex alignItems="center">
-              <Image w="8" src={logo} alt="logo" />
+              <Image w={{ base: "6", md: "7" }} src={logo} alt="logo" />
               <Text
+                mt="2"
+                fontFamily="Khand"
                 fontWeight="700"
                 letterSpacing="0.5px"
-                fontSize="24px"
-                fontFamily="Bricolage Grotesque"
-                color="#444444"
+                fontSize={{ base: "23px", md: "26px" }}
+                color="#1b9dff"
               >
                 staybnb
               </Text>
