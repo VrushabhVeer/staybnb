@@ -7,10 +7,12 @@ import {
   useDisclosure,
   Stack,
   Image,
+  Avatar,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 import logo from "../assets/location.png";
+import user from "../assets/user.png";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -50,23 +52,31 @@ export default function Navbar() {
             </Flex>
           </Link>
 
-          <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-            <Text>Home</Text>
-            <Text>About</Text>
-            <Text>Tasks</Text>
-            <Text>Others</Text>
+          <HStack as={"nav"} spacing={5}>
+            <HStack
+              fontWeight="500"
+              display={{ base: "none", md: "flex" }}
+              spacing={6}
+            >
+              <Text>Find Stay's</Text>
+              <Text>List your property</Text>
+              <Link to="/login">
+                <Text>Login</Text>
+              </Link>
+            </HStack>
+            <Avatar size="sm" src={user} />
           </HStack>
-
-          <Link to="/login">Login</Link>
         </Flex>
 
         {isOpen ? (
-          <Box pb={5} pt={5} ml={3} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
+          <Box pb={10} pt={5} ml={3} display={{ md: "none" }}>
+            <Stack as={"nav"} spacing={5} fontWeight="500">
               <Text>Home</Text>
-              <Text>About</Text>
-              <Text>Tasks</Text>
-              <Text>Others</Text>
+              <Text>Find Stay's</Text>
+              <Text>List your property</Text>
+              <Link to="/login">
+                <Text>Login</Text>
+              </Link>
             </Stack>
           </Box>
         ) : null}
