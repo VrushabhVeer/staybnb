@@ -5,7 +5,12 @@ import logo from "../assets/location.png";
 const Footer = () => {
   return (
     <>
-      <Box mt="20" bg="gray.50" px="10" py={{base:"10", md:"20"}}>
+      <Box
+        mt={{ base: "12", md: "20" }}
+        bg="gray.50"
+        px="10"
+        py={{ base: "10", md: "20" }}
+      >
         <SimpleGrid
           w={{ base: "none", md: "80%" }}
           m="auto"
@@ -51,7 +56,7 @@ const Footer = () => {
             <Text fontWeight="600" fontSize={{ base: "15px", md: "16px" }}>
               Follow Us
             </Text>
-            <Flex gap="3" mt="3" fontSize={{base:"15", md:"17"}}>
+            <Flex gap="3" mt="3" fontSize={{ base: "15", md: "17" }}>
               <i className="fa-brands fa-youtube" />
               <i className="fa-brands fa-instagram" />
               <i className="fa-brands fa-facebook" />

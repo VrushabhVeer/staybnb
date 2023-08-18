@@ -8,6 +8,13 @@ import {
   Stack,
   Image,
   Avatar,
+  Menu,
+  MenuButton,
+  MenuList,
+  Center,
+  MenuDivider,
+  MenuItem,
+  Button,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
@@ -58,22 +65,53 @@ export default function Navbar() {
               display={{ base: "none", md: "flex" }}
               spacing={6}
             >
-              <Text>Find Stay's</Text>
-              <Text>List your property</Text>
+              <Link to="/stays">
+                <Text>Find Stay's</Text>
+              </Link>
+              <Link to="/list_property">
+                <Text>List your property</Text>
+              </Link>
               <Link to="/login">
                 <Text>Login</Text>
               </Link>
             </HStack>
-            <Avatar size="sm" src={user} />
+
+            <Menu>
+              <MenuButton
+                as={Button}
+                rounded={"full"}
+                variant={"link"}
+                cursor={"pointer"}
+                minW={0}
+              >
+                <Avatar size="sm" src={user} />
+              </MenuButton>
+              <MenuList alignItems={"center"}>
+                <Center>
+                  <Text fontWeight="500">Username</Text>
+                </Center>
+
+                <MenuDivider />
+                <MenuItem>Your Servers</MenuItem>
+                <MenuItem>Account Settings</MenuItem>
+                <MenuItem>Logout</MenuItem>
+              </MenuList>
+            </Menu>
           </HStack>
         </Flex>
 
         {isOpen ? (
           <Box pb={10} pt={5} ml={3} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={5} fontWeight="500">
-              <Text>Home</Text>
-              <Text>Find Stay's</Text>
-              <Text>List your property</Text>
+              <Link to="/">
+                <Text>Home</Text>
+              </Link>
+              <Link to="/stays">
+                <Text>Find Stay's</Text>
+              </Link>
+              <Link to="/list_property">
+                <Text>List your property</Text>
+              </Link>
               <Link to="/login">
                 <Text>Login</Text>
               </Link>

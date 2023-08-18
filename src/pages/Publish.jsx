@@ -1,8 +1,8 @@
-import React from "react";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-const ListProperty = () => {
+const Publish = () => {
   return (
     <Flex
       w={{ base: "90%", md: "85%" }}
@@ -13,18 +13,15 @@ const ListProperty = () => {
     >
       <Box w="100%">
         <Text fontWeight="700" fontSize={{ base: "30px", md: "38px" }}>
-          Tell us about your place
+          Finish up and publish
         </Text>
         <Text>
-          Share some basic info, such as where it is and how many guests can
-          stay.
-          <br />
-          In this step, we'll ask you which type of property you have and if
-          guests will book the entire place or just a room. Then let us know the
-          location and how many guests can stay.
+          You have completed your listing setup.
+          
+          confirm your listing and publish.
         </Text>
 
-        <Link to="/structure">
+        <Link to="">
           <Button
             bg="#131921"
             _hover={{ bg: "black" }}
@@ -35,7 +32,7 @@ const ListProperty = () => {
             px="8"
             size="lg"
           >
-            Get Started
+            Confirm
           </Button>
         </Link>
       </Box>
@@ -52,4 +49,4 @@ const ListProperty = () => {
   );
 };
 
-export default ListProperty;
+export default Publish;

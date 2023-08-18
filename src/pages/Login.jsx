@@ -9,7 +9,7 @@ const Login = () => {
         <Text fontSize={{ base: "26px", md: "36px" }} fontWeight="700">
           Welcome Back
         </Text>
-        <Text>Login to your planr account.</Text>
+        <Text>Login to your staybnb account.</Text>
       </Box>
       <Box mt="8">
         <Input

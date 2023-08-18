@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import property from "../assets/stay-architecture.jpg";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -45,18 +46,20 @@ const Homepage = () => {
               property.
             </Text>
 
-            <Button
-              bg="#2b8aff"
-              _hover={{ bg: "#0050ff" }}
-              color="white"
-              fontWeight="normal"
-              fontSize="16px"
-              mt="8"
-              px="8"
-              size="lg"
-            >
-              Discover stays
-            </Button>
+            <Link to="/stays">
+              <Button
+                bg="#2b8aff"
+                _hover={{ bg: "#0050ff" }}
+                color="white"
+                fontWeight="500"
+                fontSize="16px"
+                mt="8"
+                px="8"
+                size="lg"
+              >
+                Discover stays
+              </Button>
+            </Link>
           </Box>
         </Box>
         <Box w="100%">
@@ -76,7 +79,11 @@ const Homepage = () => {
         m="auto"
         mt={{ base: "10", md: "20" }}
       >
-        <Text fontSize={{ base: "35px", md: "50px" }} fontWeight="700">
+        <Text
+          fontSize={{ base: "35px", md: "50px" }}
+          fontWeight="700"
+          textAlign={{ base: "center", md: "left" }}
+        >
           Services
         </Text>
 
@@ -89,7 +96,7 @@ const Homepage = () => {
           flexDirection={{ base: "column", md: "row" }}
         >
           <Box w="100%">
-            <Box w="10">
+            <Box w="10" m={{ base: "auto", md: "0" }}>
               <Image
                 w="100%"
                 src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/06/VRBO-shield-mark.svg"
@@ -97,16 +104,18 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="600" fontSize="17px" mt="3">
-              Peace of mind
-            </Text>
-            <Text color="gray" fontSize="15px">
-              Our Book with Confidence guarantee gives you 24/7 support
-            </Text>
+            <Box textAlign={{ base: "center", md: "left" }} mt="4">
+              <Text fontWeight="600" fontSize="17px">
+                Peace of mind
+              </Text>
+              <Text color="gray" fontSize="15px">
+                Our Book with Confidence guarantee gives you 24/7 support
+              </Text>
+            </Box>
           </Box>
 
           <Box w="100%">
-            <Box w="14">
+            <Box w="14" m={{ base: "auto", md: "0" }}>
               <Image
                 w="100%"
                 src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/06/VRBO-teapot-mark.svg"
@@ -114,16 +123,18 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="600" fontSize="17px" mt="3">
-              All the privacy of home
-            </Text>
-            <Text color="gray" fontSize="15px">
-              Enjoy full kitchens, laundry, pools, yards and more
-            </Text>
+            <Box textAlign={{ base: "center", md: "left" }} mt="4">
+              <Text fontWeight="600" fontSize="17px">
+                All the privacy of home
+              </Text>
+              <Text color="gray" fontSize="15px">
+                Enjoy full kitchens, laundry, pools, yards and more
+              </Text>
+            </Box>
           </Box>
 
           <Box w="100%">
-            <Box w="12">
+            <Box w="12" m={{ base: "auto", md: "0" }}>
               <Image
                 w="100%"
                 src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/06/VRBO-money-mark.svg"
@@ -131,16 +142,18 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="600" fontSize="17px" mt="3">
-              More for less
-            </Text>
-            <Text color="gray" fontSize="15px">
-              More space, more privacy, more amenities — more value
-            </Text>
+            <Box textAlign={{ base: "center", md: "left" }} mt="4">
+              <Text fontWeight="600" fontSize="17px">
+                More for less
+              </Text>
+              <Text color="gray" fontSize="15px">
+                More space, more privacy, more amenities — more value
+              </Text>
+            </Box>
           </Box>
 
           <Box w="100%">
-            <Box w="12">
+            <Box w="12" m={{ base: "auto", md: "0" }}>
               <Image
                 w="100%"
                 src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/06/VRBO-heart-mark.svg"
@@ -148,12 +161,14 @@ const Homepage = () => {
                 loading="lazy"
               />
             </Box>
-            <Text fontWeight="600" fontSize="17px" mt="3">
-              A place for everyone
-            </Text>
-            <Text color="gray" fontSize="15px">
-              We stand for diversity, inclusion and families everywhere.
-            </Text>
+            <Box textAlign={{ base: "center", md: "left" }} mt="4">
+              <Text fontWeight="600" fontSize="17px">
+                A place for everyone
+              </Text>
+              <Text color="gray" fontSize="15px">
+                We stand for diversity, inclusion and families everywhere.
+              </Text>
+            </Box>
           </Box>
         </Flex>
       </Box>
@@ -196,7 +211,7 @@ const Homepage = () => {
             bg="#2b8aff"
             _hover={{ bg: "#0050ff" }}
             color="white"
-            fontWeight="normal"
+            fontWeight="500"
             fontSize="16px"
             mt="5"
             size="lg"

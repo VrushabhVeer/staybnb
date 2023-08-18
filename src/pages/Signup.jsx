@@ -9,7 +9,7 @@ const Signup = () => {
         <Text fontSize={{ base: "26px", md: "36px" }} fontWeight="700">
           Create Account
         </Text>
-        <Text>Create your account on planr.</Text>
+        <Text>Create your account on staybnb.</Text>
       </Box>
       <Box mt="8">
         <Input
